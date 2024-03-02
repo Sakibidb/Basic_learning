@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform">
+        <input type="text" name="fname" placeholder="first Name">
+        <input type="text" name="lname" placeholder="last Name"><br>
+        Gender <br>
+        Male: <input type="radio" name="gender" value="Male">
+        Female: <input type="radio" name="gender" value="Female"><br>
+        Address: <br> <textarea name="Address" id="" cols="30" rows="5"></textarea><br>
+        programing Lenguage <br>
+        <input type="checkbox" name="php" value="PHP"> php       
+        <input type="checkbox" name="react" value="React"> React
+        <input type="checkbox" name="angular" value="Angular">Angular <br>
+        <button type="button" onclick="display()">Show in a new window</button>
+    </form>
+    <script>
+        function display(){
+            let fname = document.myform.fname.value;
+            let lname = document.myform.lname.value;
+            let gender = document.myform.gender.value;
+            let Address = document.myform.Address.value;
+            
+
+            let mywindow = window.open("", "", "height=300, width=400")
+            mywindow.document.write("Your Name is "+ fname + " " + lname + ("<br>"))
+            mywindow.document.write("Your Address is "+ Address+("<br>"))
+            mywindow.document.write("Your Gender is "+ gender)
+        }
+        
+    </script>
+</body>
+</html>

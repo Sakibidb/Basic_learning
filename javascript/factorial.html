@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Find out Factorial</h3>
+    <script>
+    //     function factorial(n){
+    //     let product = 1;
+    //     while(n>1){
+    //        product *= n;
+    //        n--; 
+    //     }
+    //     document.write(product);
+    // }
+    // let n = prompt("Put a number", "");
+    // factorial(n);
+    </script>
+
+    <script>
+        function factorial(x) {
+        if (x <= 1) return 1;
+        return x * factorial(x-1); // recursive
+        }
+        let n = prompt("Put a number", "");    
+        document.write(factorial(n));
+    </script>
+</body>
+</html>

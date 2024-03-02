@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Log in form</h3>
+    <form action="" name="validation">
+        <input type="text" name="username" placeholder="Enter a valid username">
+        <input type="text" name="password" placeholder="Enter a valid password">
+        <button type="submit" onclick="valid()">Login</button>
+
+    </form>
+    <script>
+        function valid(){
+            let username = document.validation.username.value;
+            let password = document.validation.password.value;
+
+        
+        if (username.length<6) {
+            alert("User should be at least 6 characters long.");
+            return false;
+        }
+        if (password.length>8){
+            alert("password should be maximum of 8 chatacter logn")
+            return false;
+        }
+        alert("login submitted successful.");
+        return true;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th {
+            border:1px solid green;
+            border-collapse: collapse;    
+        }
+        th {
+            width: 33%;
+        }
+
+        #tbl3 {
+            width:500px;
+            border-spacing: 25px;
+            border-collapse: separate;
+        }
+        #tbl3 td {
+            padding:25px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Table with 4 rows and 4 columns</h3>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>Item</td>
+            <td>Quantity</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>RAM</td>
+            <td>2</td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Harddisk</td>
+            <td>3</td>
+            <td>12000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Motherboard</td>
+            <td>2</td>
+            <td>10000</td>
+        </tr>
+    </table>
+
+    <h3>Table with header and caption</h3>
+    <table style="width: 500px">
+        <caption>Player list</caption>
+        <tr>
+            <th>ID</th>
+            <th>Country</th>
+            <th>Player</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bangladesh</td>
+            <td>Sakib, Tamim</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Srilanka</td>
+            <td>Mahela, Joysuriya</td>
+        </tr>
+    </table>
+    
+    <h3>Table with padding</h3>
+    <table id="tbl3">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+    </table>
+</body>
+</html>

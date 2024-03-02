@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = {Name:"Iqbal Hossain", Age:"26", Address:"Dhaka"};
+        function printprops(x){
+            for(let item in x){
+                document.write(item + ": "+x[item] + "<br>")
+                console.log(`${item}:${x[item]}\n`)
+            }
+        }
+        printprops(student);
+    </script>
+</body>
+</html>

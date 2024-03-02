@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        #menu {
+            width: 100px;
+            height: 500px;
+            background-color: rgb(132, 241, 218);
+            padding: 20px;
+            float: left;
+            margin-right: 10px;
+            text-align: center;
+        #cont {
+            float: left;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="menu">
+        <a href="text.html" target="content">Text</a><br>
+        <a href="product_entry.html" target="content">Product Entry</a><br>
+        <a href="ProductList.html" target="content">Product List</a>
+    </div>
+    <div id="cont">
+        <iframe src="text.html"  name="content" frameborder="2" width="300" height="500"></iframe>
+
+    </div>
+</body>
+</html>

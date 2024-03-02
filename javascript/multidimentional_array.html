@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>One Dimentional array</h3>
+    <script>
+        let flowers = ["Rose", "Water Lilly", "Sunflower"];
+        document.write(flowers[0]); // Rose will display
+    </script>
+     <h3>Two Dimentional array</h3>
+    <script>
+        var activities = [ 
+        ['Work', 9], 
+        ['Eat', 1],
+        ['Commute', 2],
+        ['Play Game', 1],
+        ['Sleep', 7]  
+    ];
+        document.write(activities[4][0]);
+    </script>
+<h3>Three Dimentional array</h3>
+<script>
+    var activities = [ 
+    ['Work', 9], 
+    ['Eat', 1],
+    ['Commute', 2],
+    ['Play Game', 1],
+    ['Sleep', 7, ["Rose", "Water Lilly", "Sunflower"]] 
+];
+    
+activities[1].push("Thursday");
+activities[2].push("Metro Rail");
+document.write(activities[2]);
+
+
+    console.table(activities)
+</script>
+    
+</body>
+</html>

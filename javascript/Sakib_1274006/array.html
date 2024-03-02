@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Array with String Values</h3>
+    <script>
+
+        const cars = ["Volvo", "Toyota", "BMW"]
+        document.write(cars);
+        document.write("<br>");
+        document.write(cars[0]);
+        document.write("<br>");
+        document.write(cars[2]);
+    </script>
+
+    <h3>Array with Numeric Values</h3>
+    <script>
+
+        const number = [5,15,12,4,5,7,6,8]
+        document.write(number);
+        document.write("<br>");
+        document.write(number[0]);
+        document.write("<br>");
+        document.write(number[2]);
+    </script>
+    <h3>Array with declaretion and add content</h3>
+    <script>
+        const fruits = []
+        document.write(fruits)
+        fruits[0] = "Mango";
+        fruits[1] = "Banana";
+        fruits[2] = "Jackfruit";
+
+        document.write(fruits)
+        document.write("<br>")
+        document.write(fruits[2])
+    </script>
+
+    <h3>Array with new keyword</h3>
+    <script>
+        const flower = new Array("Rose ", " Jesmin", "Jui", " Chameli", " Hasnahena", " Lily")
+
+        document.write(flower)
+        document.write("<br>")
+        document.write(flower[2])        
+        document.write("<br>")
+        document.write("Number of Elements= "+ flower.length)
+        document.write(flower[flower.length - 1])
+    </script>
+
+    
+
+</body>
+</html>

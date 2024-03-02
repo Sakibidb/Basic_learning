@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Marks</title>
+</head>
+<body>
+    <h3>User inputs Exam marks evaluate</h3>
+    <script>
+        // let m = prompt("Enter MCQ marks", "");
+        // let d = prompt("Enter Descriptive marks", "");
+        // let e = prompt("Enter Evidence marks", "");
+
+        // if(m>=80 && d>=60 && e>=60){
+        //     alert("You are passed");
+        // } else {
+        //     alert("You are failed");
+        // }
+    </script>
+   
+
+    <form action="" name="result">
+        <input type="text" name="mcq" placeholder="Enter MCQ" value=""><br>
+        <input type="text" name="desc" placeholder="Enter Decriptive"><br>
+        <input type="text" name="eve" placeholder="Enter Evidence"><br>
+        <button type="button" onclick="showResult()" >Show Result</button>
+    </form>
+    <script>
+        function showResult(){
+            let mcq = document.result.mcq.value;
+            //alert(mcq);
+            let desc = document.result.desc.value;
+            let eve = document.result.eve.value;       
+            if(mcq>=80 && desc>=60 && eve>=60){
+                alert("You are passed");
+            } else {
+                alert("You are failed");
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

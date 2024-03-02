@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Submission</title>
+  </head>
+  <body>
+    <h1>Form data open in new window</h1>
+    <form action="" name="myForm">
+      Name : <input type="text" name="name" id="" placeholder="Enter Name" />
+      <br /><br />
+      Contact :
+      <input type="text" name="contact" id="" placeholder="Enter Contact" />
+      <br />
+      <br />
+
+      Remarks : <textarea name="remarks" placeholder="Remaks!"></textarea>
+      <br />
+      <br />
+      Sex: <input type="radio" name="gender" id="" value="Male" /> Male
+      <input type="radio" name="gender" id="" value="Female" /> Female<br />
+      <br />
+
+      Select the courses:
+      <input type="checkbox" name="NT" id="" value="NT" /> NT
+      <input type="checkbox" name="NT" id="" value="IAD" /> IAD
+      <input type="checkbox" name="NT" id="" value="DDD" /> DDD
+      <input type="checkbox" name="NT" id="" value="ESAD" /> ESAD <br />
+      <br />
+
+      Select your location:
+      <select name="location" id="">
+        <option value="">Select one</option>
+        <option value="Banani">Banani</option>
+        <option value="Dhanmondi">Dhanmondi</option>
+        <option value="Mirpur">Mirpur</option>
+      </select>
+      <br />
+      <br />
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script>
+      class FormData {
+        constructor(name, contact, gender, remarks, courses, location) {
+          this.name = name;
+          this.contact = contact;
+          this.remarks = remarks;
+          this.gender = gender;
+          this.courses = courses;
+          this.location = location;
+        }
+
+        formatData() {
+          let formattedData = "";
+          formattedData += "Name: " + this.name + "\n";
+          formattedData += "Contact: " + this.contact + "\n";
+          formattedData += "Remarks: " + this.remarks + "\n";
+          formattedData += "Gender: " + this.gender + "\n";
+          formattedData += "Courses: " + this.courses.join(", ") + "\n";
+          formattedData += "Location: " + this.location + "\n";
+          return formattedData;
+        }
+      }
+
+      function submitForm() {
+        let name = document.forms["myForm"]["name"].value;
+        let contact = document.forms["myForm"]["contact"].value;
+        let remarks = document.forms["myForm"]["remarks"].value;
+        let gender = document.querySelector(
+          'input[name="gender"]:checked'
+        ).value;
+        let courses = Array.from(
+          document.querySelectorAll('input[name="NT"]:checked')
+        ).map((course) => course.value);
+        let location = document.forms["myForm"]["location"].value;
+
+        let formData = new FormData(
+          name,
+          contact,
+          gender,
+          remarks,
+          courses,
+          location
+        );
+
+        let formattedData = formData.formatData();
+        let newWindow = window.open("", "Form Data", "width=400,height=400");
+        newWindow.document.write("<pre>" + formattedData + "</pre>");
+      }
+    </script>
+  </body>
+</html>

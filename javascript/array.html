@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array</title>
+</head>
+<body>
+    <h3>Array with String values</h3>
+   <script>
+        const cars = ["Volvo", 
+        "Toyota", 
+        "BMW", 
+        "Audi"];
+        document.write(cars);
+        document.write("<br>");
+        document.write(cars[0]);
+        document.write("<br>");
+        document.write(cars[3]);
+   </script> 
+<h3>Array with Numeric values</h3>
+    <script>
+        const numbers = [5, 15, 37, 57, 93, 67, 82];
+        document.write(numbers);
+        document.write("<br>");
+        document.write(numbers[3]);
+        document.write("<br>");
+        document.write(numbers[5]);
+    </script>
+ <h3>Empty array declaration and add content</h3> 
+    <script>
+        const fruits = []; // empty array declaration 
+        document.write(fruits);
+        fruits[0] = "Mango";
+        fruits[1] = "Jackfruit";
+        fruits[2] = "Lichi";
+
+        document.write(fruits);
+        document.write("<br>");
+        document.write(fruits[2]);
+    </script>
+<h3>Array with new keyword</h3> 
+    <script>
+        const flowers = new Array("Rose", "Belly", "Waterlily", "Sunflower", "Cosmos");
+        document.write(flowers);
+        document.write("<br>");
+
+        // Array length / numbers
+        //document.write("Number of Elements: ");
+        document.write("Number of Elements: " + flowers.length);
+
+    </script>
+</body>
+</html>

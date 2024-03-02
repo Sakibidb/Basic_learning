@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Form Validation</h1>
+    <form action="" name="loginForm">
+      <input type="email" name="email" placeholder="Enter Email" /><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter Password"
+      /><br />
+      <button type="button" onclick="newForm.checkData()">SUBMIT</button>
+    </form>
+
+    <script>
+      class Validation {
+        checkData() {
+          let email = document.loginForm.email.value;
+          let password = document.loginForm.password.value;
+
+          let validate = false;
+          let pattern = /[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/;
+
+          if (email.match(pattern)) {
+            validate = true;
+            //     alert(this.email);
+          } else {
+            alert("Email format invalid");
+            validate = false;
+            return false;
+          }
+          let pswdpattern = /[a-zA-Z0-9]{4,8}/;
+          if (password.match(pswdpattern)) {
+            validate = true;
+          } else {
+            alert("Password must be 4 to 8 character");
+            validate = false;
+            return false;
+          }
+
+          if (validate) {
+            alert("All Data are validated");
+          }
+        }
+      }
+
+      const newForm = new Validation();
+    </script>
+  </body>
+
+</html>
+
+

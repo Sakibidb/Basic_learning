@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h3>Form 1: Contact Form</h3>
+    <form>
+        Name: <br><input name="fullname" type="text"><br>
+        Email: <br> <input name="email" type="email"><br>
+        Subject: <br> <input name="subject" type="text"><br>
+        Message: <br> <textarea name="message" cols="30" rows="5"></textarea><br>
+        <input type="submit" value="SUBMIT">
+    </form>
+
+    <h3>Form 2: Registration Form</h3>
+    <form action="">
+        Name: <br><input type="text" name="name" placeholder="Enter your name"><br>
+        Gender: <br>Male <input type="radio" name="gender" checked>
+        Female <input type="radio" name="gender">
+        Others <input type="radio" name="gender"><br>
+        DOB: <br> <input type="date" name="dob"><br>
+        District: <br>
+        <select name="district">
+            <option value="">Select one</option>
+            <option value="">Dhaka</option>
+            <option value="">Comilla</option>
+            <option value="" selected>Noakhali</option>
+            <option value="">Barishal</option>
+            <option value="">Rahshahi</option>
+        </select><br>
+        <input type="submit" name="submit" value="REGISTER">
+    </form>    
+<br><br>
+</body>
+</html>

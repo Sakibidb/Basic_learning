@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Get Date and Time</h3>
+    <script>
+        const d = new Date();
+        document.write(d);
+        document.write("<hr>");
+        document.write("Today's Date: " + d.getDate() + "<br>");
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        document.write("Today's Day: " + days[d.getDay()] + "<br>");
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.write("Current Month: " + months[d.getMonth()] + "<br>");
+        document.write("Current Year: " + d.getFullYear() + "<br>");
+        document.write("Current Hour: " + d.getHours() + "<br>");
+        document.write("Current Minutes: " + d.getMinutes() + "<br>");
+        document.write("Current Time: " + d.getTime() + "<br>");
+    </script>
+    
+</body>
+</html>

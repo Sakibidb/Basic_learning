@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Data with Table using loop</h2>
+    <script>
+        let cities = ["Daka", "Khulna", "Rajshahi","Barishal"]
+        
+        let table = "<table border=5>"
+            
+        for(let i = 0; i<cities.length; i++){
+            table += "<tr><td>"+ cities[i] + "</td></tr>"
+        }
+        table += "</table>"
+        document.write(table);
+    </script>
+    
+</body>
+</html>

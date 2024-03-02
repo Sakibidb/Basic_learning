@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+   <h3>1 to 10 output using for loop</h3><hr> 
+   <script>  
+        for(let i=0; i<=10; i++){
+            document.write("I am " + i + "<br>");
+        }
+
+        document.write("Loop is ended");
+   </script>
+
+<h3>10 to 1 output using for loop</h3><hr> 
+<script>  
+     for(let i=10; i>0; i--){
+         document.write("I am " + i + "<br>");
+     }
+     document.write("Loop is ended");
+</script>
+
+<h3>Array element as list output using for Loop</h3><hr>
+<script>
+    const flowers = new Array("Rose", "Belly", "Waterlily", "Sunflower", "Cosmos");
+
+    document.write("<ol>");
+    for(let x=0; x<flowers.length; x++){
+        // document.write("<li>");
+        //     document.write(flowers[x]);
+        // document.write("</li>");
+        document.write("<li>" + flowers[x] + "</li>");
+    }
+    document.write("</ol>");
+</script>
+<h3>Lopping</h3>
+<script>
+    for(let i =0;i<=10; i++){
+        document.write("I am" + i + ("<br>"))
+    }
+</script>
+</body>
+</html>

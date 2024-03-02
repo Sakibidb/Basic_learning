@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Registration Form</h3>
+    <form action="" name="myform">
+        <input type="text" name="name" placeholder="Enter name"><br>
+        <textarea name="address" cols="30" rows="10" placeholder="Enter address"></textarea><br>
+        <button type="button" onclick="displayData()">Submit</button>
+    </form>
+    <script>
+        function displayData(){
+            let name = document.myform.name.value;
+            let address = document.myform.address.value;
+
+            //alert(name + address);
+           let mywindow = window.open("", "", "width=400,height=200");
+           mywindow.document.write("Name: " + name + "<br>");
+           mywindow.document.write("Address: " + address);
+        }
+    </script>
+
+</body>
+</html>

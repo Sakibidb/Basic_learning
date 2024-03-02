@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu {
+            width: 180px;
+            height: 500px;
+            background-color: rgb(241, 194, 194);
+            padding: 20px;
+            float: left;
+            margin-right: 10px;
+            font-size: large;
+
+        }
+        #menu ul li {
+            padding: 5px 0;
+            list-style: none;
+            width: 100px;
+            text-align: center;
+
+        }
+        #menu ul li a {
+            text-decoration: none;
+            background-color: rgb(196, 27, 27);
+            color: #ffffff;
+            display: block;
+        }
+        #main {
+            width: 800px;
+            height: 500px;
+            border: 1px solid black;
+            float: left;
+            padding: 20px;
+            font-size: x-large;
+
+        }
+        #container {
+            margin: auto;
+            width: 1100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <nav id="menu">
+            <ul>
+                <li><a target="mydocu" href="paragraph.html">Home</a></li>
+                <li><a target="mydocu" href="form_hw_2.html">Product List</a></li>
+                <li><a target="mydocu" href="paragraph.html">Contact Form</a></li>
+            </ul>
+        
+        </nav>
+        <div id="main">
+            <iframe src="form_hw_2.html" name="mydocu" frameborder="0" height="500" width="800"></iframe>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

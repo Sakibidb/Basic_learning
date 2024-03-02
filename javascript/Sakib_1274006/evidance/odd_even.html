@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Odd/Even Number check</h3>
+    <div id="demo"></div>
+    <script>
+        // let mynumber = prompt("Enter A Number", "");
+        // if(mynumber % 2 ==0){
+        //     document.write(mynumber + " is even number")
+        // }
+        // else {
+        //     document.write(mynumber + " is odd number")
+        // }
+    </script>
+    
+    <script>
+        let mynumber = prompt("Enter A Number", "");
+        if(mynumber % 2 ==0){
+            document.getElementById("demo").innerHTML = mynumber + " is even number";
+        }
+        else {
+            document.getElementById("demo").innerHTML = mynumber + " is odd number";
+        }
+    </script>
+</body>
+</html>

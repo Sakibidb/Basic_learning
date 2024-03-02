@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Log in Form</h3>
+    <form action="" name="valid">
+        <input type="text" name="username" placeholder="Enter a valid username">
+        <input type="password" name="pass" placeholder="Enter a valid password">
+        <button type="submit" onclick="validation()">Login</button>
+    </form>
+
+    <script>
+//         function validation(){
+// let username = document.valid.username.value;{
+
+// }
+// let pass = document.valid.pass.value;{
+//         }
+//     if(username.length>=6 && pass.length<=8){
+//         alert("Valid Username and password")
+//     } else
+//     alert("Invalid Username and Password")
+        
+// }
+
+
+    </script>
+<script>
+    function validation() {
+      var username = document.valid.username.value;
+      var password = document.valid.pass.value;
+
+      // Username length validation
+      if (username.length < 6) {
+        alert("Username should be at least 6 characters long.");
+        return false;
+      }
+
+      // Password length validation
+      if (password.length > 8) {
+        alert("Password should be a maximum of 8 characters long.");
+        return false;
+      }
+
+      // Successful validation
+      alert("Login form submitted successfully.");
+      return true;
+    }
+  </script>
+</body>
+</html>

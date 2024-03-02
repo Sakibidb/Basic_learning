@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Pass\ Fail finding</h3>
+    <form action="" name="result">
+        <input type="number" name="mcq" placeholder="ENTER MCQ NUMBER"> <br> <br>
+        <input type="number" name="des" placeholder="ENTER DESCRIPTIVE NUMBER"> <br> <br>
+        <input type="number" name="evid" placeholder="ENTER EVIDANCE NUMBER"> <br> <br>
+        <button onclick="showresult()">SHOW RESULT</button>
+    </form>
+    <script>
+        function showresult(){
+            let mcq = document.result.mcq.value;
+            let des = document.result.des.value;
+            let evid = document.result.evid.value;
+        if(mcq>=80 && des>=60 && evid>=60){
+            alert("You are passed")
+        } else(
+            alert("You are fail")
+        )
+        }
+    </script>
+</body>
+</html>

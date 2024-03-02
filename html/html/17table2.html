@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #tbl1 {
+            width: 500px;
+        } */
+        /* Styling for table 1 */
+        #tbl1, td {
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        #tbl1 td {
+            padding:25px;
+        }
+        /* Styling for table 2 */
+        #tbl2, td {
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        #tbl2 td {
+            padding:25px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Table with colspan</h3>
+    <table id="tbl1">
+        <tr>
+            <td colspan="2">A</td>
+            
+            <td colspan="2">C</td>
+            
+        </tr>
+        <tr>
+            <td colspan="4">E</td>
+            
+        </tr>
+        <tr>
+            <td>J</td>
+            <td colspan="3">K</td>
+            
+        </tr>
+        <tr>
+            <td>N</td>
+            <td>O</td>
+            <td colspan="2">P</td>
+            
+        </tr>
+    </table>
+
+    <br><br>
+    <h3>Table with rowspan</h3>
+    <table id="tbl2">
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+            <td rowspan="3">C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            
+            <td>F</td>
+            
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>N</td>
+            <td>O</td>
+            <td>P</td>
+            <td>Q</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

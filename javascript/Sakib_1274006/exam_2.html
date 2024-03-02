@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exam Mark Evaluate</h1>
+    <form action="" name="result">
+        <input type="text" name="mcq" placeholder="Enter mcq number">
+        <input type="text" name="des" placeholder="Enter descriptive number">
+        <input type="text" name="evi" placeholder="Enter Evidence Number">
+        <button onclick="showResult()">Show Result</button>
+
+    </form>
+    <script>
+        function showResult(){
+            let mcq = document.result.mcq.value;
+            let des = document.result.mcq.value;
+            let evi = document.result.mcq.value;
+        
+        if(mcq>=80 && des>=60 && evi>=60){
+            alert("You are Passed")
+        } else{
+            alert("You are Fail")
+        }
+    }
+        
+
+    </script>
+</body>
+</html>

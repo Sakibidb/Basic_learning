@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Find Maximum from given numbers</h3>
+    <script>
+        function findMax(){
+           let max = -1;
+           for(let i=0; i<arguments.length; i++){
+                if(arguments[i]>max){
+                    max = arguments[i];
+                }    
+           } 
+           return max;
+        }
+        let first = prompt("Enter 1st number" ,"");
+        first =  parseInt(first);
+        let second = prompt("Enter 2nd number" ,"");
+        second =  parseInt(second);
+        let third = prompt("Enter 3rd number" ,"");
+        third =  parseInt(third);
+        let max = findMax(first, second, third);
+
+        document.write("The maximum number is " + max);
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Class Create</h3>
+    <script>
+        class Car {
+            constructor(name, year){
+                this.name = name;
+                this.year = year;
+            }
+            age (){
+                const date = new Date();
+               return date.getFullYear() - this.year;
+            }
+        }
+    </script>
+     <h3>Create Object</h3>
+    <script>
+       const car1 = new Car("Toyota", 1975);       
+       const car2 = new Car("BMW", 1980);
+
+        // Car1 Info
+       document.write(car1.name);
+       document.write(" - ");
+       document.write(car1.year);
+       document.write(", ");
+       document.write("Age: " + car1.age());
+        // Car2 Info
+       document.write("<hr>");
+       document.write(car2.name);
+       document.write(" - ");
+       document.write(car2.year);
+       document.write(", ");
+       document.write("Age: " + car2.age());
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="result">
+        <input type="number" name="mcq" placeholder="enter MCQ number">
+        <input type="number" name="des" placeholder="enter descriptive number">
+        <input type="number" name="evi" placeholder="enter evidace number"> <br>
+        <button onclick="showresult()">SHOW RESULT</button>
+    </form>
+    <script>
+        function showresult(){
+            let mcq = document.result.mcq.value;
+            let des = document.result.des.value;
+            let evi = document.result.evi.value;
+            if(mcq>=30 && des>=30 && evi>=50){
+                alert ("you are passed")
+            } else(
+            alert("You are Fail")
+            )
+        }
+    </script>
+</body>
+</html>

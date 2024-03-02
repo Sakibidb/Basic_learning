@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="fname">
+    <input type="text" id="lname">
+    <button onclick="getData()">Click here</button>
+    <script>
+        function getData(){
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let fullname = fname + " " + lname;
+            alert(fullname);
+        }
+    </script>
+</body>
+</html>

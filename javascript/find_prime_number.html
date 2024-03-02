@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Prime Number</title>
+</head>
+<body>
+    <h3>Find Prime Number</h3>
+    <script>
+       function findPrimeNumber(){
+         let x = document.myform.num.value;  
+         //return x;
+            if(x==0){
+                return "0 is not allowed";
+            } else if(x==1){
+                return "1 is not a prime number ";
+            } else if(x==2) {
+                return "2 is a prime number ";
+            } else {
+                // for loop
+                for(let i=2; i<x; i++){
+                    if(x % i ==0){
+                        return x + " is not a prime number";
+                    }
+                }
+                // return for prime number
+                return x + " is a prime number";
+            }
+
+        }
+    </script>
+   <form action="" name="myform">
+    <input type="text" name="num">
+    <input type="button" onclick="alert(findPrimeNumber())" value="PRIME CHECK">
+   </form> 
+</body>
+</html>
